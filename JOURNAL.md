@@ -27,3 +27,23 @@ Next Steps:
 My next steps will be to continue on my research, adding the rest of the components I need and adding labels to them to prepare to actually create the pcb
 
 **Total time spent: 2.5 hours**
+
+# August 26th: Finishing schematic
+
+I started today by doing a bit more research on how it all wires together and the parts that I do need and it turns out that I do not need the TP4056 charging board. This is because the LiPo battery connects to the micro controller and can charge through the USB port on it. After looking through some of the documentation and product pages I figured out how to connect everything together which I added using the net labels.
+
+<img width="1133" height="857" alt="Screenshot 2026-08-26 212058" src="https://github.com/user-attachments/assets/1e9837cf-d171-468c-ad1f-2d8f1091bb21" />
+
+Once I put it through the ERC it turned out that the VDDPIX should be connect directly to its decoupling capacitor (C1) instead of to the 3V pin so I fixed that up.
+
+<img width="1919" height="1079" alt="Screenshot 2026-08-26 212458" src="https://github.com/user-attachments/assets/40baac98-2365-48b1-8346-74618ced61a6" />
+
+Finally, I put in all the correct footprints and put it into the PCB editor.
+
+<img width="660" height="324" alt="Screenshot 2026-08-26 213516" src="https://github.com/user-attachments/assets/7c4d78ae-2851-43d6-ae11-fabc0997f6ae" />
+<img width="1094" height="847" alt="Screenshot 2026-08-26 213722" src="https://github.com/user-attachments/assets/6b981f9c-8dc5-4391-824e-6dcfa17b68e9" />
+
+Next Steps:
+Put the components into the right spots on the PCB and wire them all together.
+
+**Total time spent: 1.5 hours**
